@@ -8,58 +8,12 @@
 </head>
 <body>
     <div style="width: 400px;height: 200px; border: 3px solid red; padding-left: 50px; padding-top: 50px;" >
-
-
-
-
-
         <form>
             <p> Name <input type="text" id="nameField"></p>
-
             <p><input type="text" id="greetBtn" type="button" value="Greet the User"  ></p>
-
-
-
         </form>
-
-
-        <script>
-            window.onload = init;
-
-            let myGreetBtn = document.getElementById('greetBtn');
-            myGreetBtn.addEventListener('click', buttonClicked);
-            // console.log(myGreetBtn);
-
-            
-
-            function init() {
-                buttonClicked();
-            }
-
-
-
-            function buttonClicked() {
-                // console.log('yes');
-                let nameField = document.getElementById('nameField');
-                // console.log(nameField);
-                name = nameField.value;
-                // console.log(name);
-                let greeting = `Hello ${name}`;
-                window.alert(greeting);
-
-
-            }
-
-        </script>
-
-
-
-
-
-
-
     </div>
-   
-    
+
+    <script src="./greeting.js"></script>
 </body>
 </html>
