@@ -1,6 +1,11 @@
-function showGreetingInConsole() {
-    let message = "Hello world";
-    console.log(message);
+// function showGreetingInConsole() {
+//     let message = "Hello world";
+//     console.log(message);
     
-}
-// showGreetingInConsole();
+// }
+// // showGreetingInConsole();
+
+
+window.onload = init;
+
+
