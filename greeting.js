@@ -17,7 +17,7 @@ myGreetBtn.addEventListener('click', buttonClicked);
 
 
 function init() {
-buttonClicked();
+// buttonClicked();
 }
 
 
@@ -30,6 +30,7 @@ let name = nameField.value;
 // console.log(name);
 let greeting = `Hello ${name}`;
 window.alert(greeting);
+
 
 
 }
