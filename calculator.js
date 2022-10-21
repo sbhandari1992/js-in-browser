@@ -19,18 +19,38 @@ divBtn.addEventListener('click', onDivBtnClicked)
 
 
 function onAddBtnClicked() {
-    result.innerHTML = Number(num1.value) + Number(num2.value);
+    if (num1.value === "" || num2.value === "") {
+        result.innerHTML = ('invalid input')
+    }
+    else {
+        result.innerHTML = Number(num1.value) + Number(num2.value);
+    }
 
 }
 function onSubBtnClicked() {
-    result.innerHTML = Number(num1.value) - Number(num2.value);
+    if (num1.value === "" || num2.value === "") {
+        result.innerHTML = ('invalid input')
+    }
+    else{
+        result.innerHTML = Number(num1.value) - Number(num2.value);
+    }
 
 }
 function onMultiBtnClicked() {
-    result.innerHTML = Number(num1.value) * Number(num2.value);
+    if (num1.value === "" || num2.value === "") {
+        result.innerHTML = ('invalid input')
+    }
+    else {
+        result.innerHTML = Number(num1.value) * Number(num2.value);
+    }
 
 }
 function onDivBtnClicked() {
-    result.innerHTML = Number(num1.value) / Number(num2.value);
+    if (num1.value === "" || num2.value === "") {
+        result.innerHTML = ('invalid input')
+    }
+    else {
+        result.innerHTML = Number(num1.value) / Number(num2.value);
+    }
 
 }
