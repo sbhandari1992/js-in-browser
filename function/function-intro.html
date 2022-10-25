@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function introduction</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+
+    <script>
+        // greeting();
+
+        // let welcome = function greeting() {
+        //     let userName = "sam";
+        //     const h1 = document.querySelector('header>h1');
+        //     console.log(h1);
+        //     h1.innerHTML += (` ${userName}`);
+
+        // }
+        
+        function favBand() {
+            let myFavBand = 'rockey';
+            console.log(`my fav band is ${myFavBand} `);
+            return myFavBand;
+
+
+        }
+        window.addEventListener('load', favBand);
+        let h2 = document.createElement('h2');
+        console.log(h2);
+
+        document.querySelector('header').appendChild(h2).innerText = favBand();
+        
+
+        
+    </script>
+    
+</body>
+</html>

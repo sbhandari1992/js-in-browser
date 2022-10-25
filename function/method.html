@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>method</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <script>
+        window.addEventListener('load', promtUserName);
+
+        function promtUserName() {
+            let userName = window.prompt('what is your name?', 'default user');
+            if (!userName.trim().length == 0) {
+                console.log(`Hey ${userName}`);
+            } else {
+                console.log('Hi Default User');
+            }
+
+        }
+
+        function pokerWinner() {
+            let joe = 100;
+            let marry = 50;
+            let linda = 150;
+            let winner = (Math.max(joe,marry,linda));
+            switch (winner) {
+                case 100:
+                    console.log('the winner is joe..')
+                    break;
+                case 50:
+                    console.log('the winner is mary')
+                    break;
+                case 150:
+                    console.log('the winner is linda..')
+                    break;
+                default:
+                    console.log('no winner')
+                    
+            }
+        }
+        pokerWinner();
+
+        // promtUserName();
+
+
+       
+    </script>
+    
+</body>
+</html>

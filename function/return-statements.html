@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return statement</title>
+</head>
+<body>
+    <script>
+        function calcTax(total,taxRate) {
+            let tax = total * taxRate;
+            console.log(tax);
+        }
+        console.log(calcTax(176,0.08));
+
+        function shipping(distance) {
+            let shipChargAmt;
+            if (distance <= 5) {
+                shipChargAmt = 10;
+            }
+            else if (distance > 5 && distance <= 10){
+                shipChargAmt = 15;
+            }
+            else if (distance > 10 && distance <= 15) {
+                shipChargAmt = 25;
+            }
+            return shipChargAmt;
+
+
+        }
+        console.log(`Your shipping cost is ${shipping(5)}`);
+
+        // function totalDue() {
+        //     let totalAmt = amount;
+        //     let totalDue = total + tax + shipChargAmt;
+        //     return totalDue;
+        // }
+        // console.log(`Total due is ${totalDue(176,calcTax(176,0.08),shipping(5))}`);
+    </script>
+</body>
+</html>
